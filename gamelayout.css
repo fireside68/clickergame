@@ -2,18 +2,29 @@
 
 header {
   background-color: green;
-  height: 70px;
   }
 
 
-/* score is the score section */
+/* scorebox is the score section */
 
 .scorebox {
          background-color: chartreuse;
          width: 150px;
-         height: 70px;
          margin: auto;
+         display: flex;
+         align-items: center;
+         justify-content: center;
       }
+
+#mainscore {
+        color: orange;
+        font-family: "Times New Roman", Times, serif;
+        font-size:40px;
+        font-style: oblique;
+        font-weight: bold;
+        max-width: 80%
+        margin:auto;
+}
 
 
 /* panel class refers to the panel holding the three long divs that
@@ -53,7 +64,8 @@ header, and the panel itself */
 .gamer, #centerPanel {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
   width: 32vw;
 }
 
@@ -86,4 +98,19 @@ header, and the panel itself */
   background-color: #47167C;
   margin: auto;
   padding: auto;
+}
+
+#modifierText, #multiplierText, #modifierLabel, #multiplierLabel{
+  width: 150px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+#modNumber, #modLabel, #multNumber, #multLabel, #theX {
+  font-family: "Times New Roman", Times, serif;
+  font-size:40px;
+  font-style: oblique;
+  font-weight: bold;
 }
