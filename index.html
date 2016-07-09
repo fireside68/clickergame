@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Game of Numbers!</title>
+  <link rel="stylesheet" type="text/css" href="gamelayout.css">
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+</head>
+
+<header>
+  <div id="#scorepanel" class="scorebox">
+    <span id="#mainscore">0</span>
+  </div>
+</header>
+</html>
+<body style="background-color: #47167C;">
+  <div id="#mainPanel" class="container mainrow">
+    <div id="#leftPanel" class="gamer threeHolder">
+      <div id="#modifierText">
+        <p><span id="#modNumber">0</span></p>
+      </div>
+      <div id="modButton">
+      <button  class="round-button">PlaceHolder</button>
+    </div>
+      <div id="modifierLabel">
+        <p><span id="modLabel">Modifier</span></p>
+      </div>
+    </div>
+    <div id="#centerPanel" class="gamer middlePanel">
+      <div>
+      <button id="#clickButton" class="round-button" onclick = "accumulate()"><p>+<span id="#clickScore">1</span><br>
+      <span id="#perClick">Per Click</span></p></button>
+    </div>
+  </div>
+  <div id="#rightPanel" class="gamer threeHolder">
+    <div id="#multiplierText">
+      <p>X<span id="#multNumber">5</span></p>
+    </div>
+    <div id="multButton">
+    <button class="round-button">PlaceHolder</button>
+  </button>
+</div>
+    <div id="multiplierLabel">
+      <p><span id="multLabel">Multiplier</span></p>
+    </div>
+  </div>
+</div>
+</body>
+<footer>
+  <hr>
+  <p><span id="copyright">Copyright &copy;2016 by unaffilated studios.</span></p>
+</footer>
+<script src="gamescript.js"></script>
+</html>

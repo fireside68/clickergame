@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Game of Numbers!</title>
+  <link rel="stylesheet" type="text/css" href="gamelayout.css">
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+</head>
+
+
+<header>
+  <div id="topbar">
+    <div id="score" class="score-text">
+      <h1><span id="scoretext">0</span></h1>
+    </div>
+  </div>
+</header>
+
+<body>
+    <div id="panel" class = "container row">
+      <div class="block" id="left">
+        <h1>test text</h1>
+        <div id = "button">
+          <button class="btn" type="button"><span class = "modifier">test</span></button>
+        </div>
+      </div>
+      <div class="block" id="center">
+
+        <button class="btn" id="perClick" type="button" onclick="genericClick();"/>Per Click</button>
+
+      </div>
+      <div class="block" id="right">
+        <h1>test text</h1>
+        <button class="btn" type="button">Click Me!</button>
+        <h1>test text</h1>
+      </div>
+      <div>
+      </div>
+      <script src = "gamescript.js"></script>
+</body>
+</html>
