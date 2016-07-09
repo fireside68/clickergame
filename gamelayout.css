@@ -1,0 +1,89 @@
+
+
+header {
+  background-color: green;
+  height: 70px;
+  }
+
+
+/* score is the score section */
+
+.scorebox {
+         background-color: chartreuse;
+         width: 150px;
+         height: 70px;
+         margin: auto;
+      }
+
+
+/* panel class refers to the panel holding the three long divs that
+are the center of game play */
+
+#panel {
+    background-color: #47167c;
+}
+
+
+
+
+/* applies to all container divs, including each individual long panel div, the
+header, and the panel itself */
+
+.container {
+    width:  95vw;
+    height: 95vh;
+    overflow: hidden;
+}
+
+.container,
+.container > *{
+           margin: auto;
+          padding: 0;
+          box-sizing: border-box;
+        }
+.mainrow {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: stretch;
+      flex-wrap: nowrap;
+  }
+/* each rectangular div corresponds to block */
+
+.gamer, #centerPanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 32vw;
+}
+
+.threeHolder {
+  border: 2px solid black;
+  height: 90vh;
+  background-color: #fdd023;
+  padding:2px;
+}
+
+
+.round-button {
+  background: #3498db;
+  border-radius: 60px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 22px;
+  text-decoration: none;
+  margin: auto;
+}
+#clickButton {margin: auto;}
+
+.round-button:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+#centerPanel #modButton #multiButton {
+  border: none;
+  background-color: #47167C;
+  margin: auto;
+  padding: auto;
+}
